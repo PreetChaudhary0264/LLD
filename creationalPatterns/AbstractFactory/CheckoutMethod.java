@@ -4,10 +4,14 @@ public class CheckoutMethod {
     private String gatewayType;
     private String invoice;
 
-    public PaymentGateway handleCheckout(String gatewayType){
+    public static PaymentGateway handleCheckout(String gatewayType){
         if(gatewayType.equals("razorpay")){
             return new Razorpay();
         }
         return new PayUiGateway();
+    }
+
+    public static Invoice handleinvoice(){
+        return new GSTInvoice();
     }
 }

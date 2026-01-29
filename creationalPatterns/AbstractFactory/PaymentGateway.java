@@ -38,6 +38,22 @@ class PayPal implements PaymentGateway{
     }
 }
 
+class JapanFirstType implements PaymentGateway{
+
+    @Override
+    public void processPayment() {
+        System.out.println("Payment is being processed by japan 1st type");
+    }
+}
+
+class JapanSecondType implements PaymentGateway{
+
+    @Override
+    public void processPayment() {
+        System.out.println("Payment is being processed by japan 2nd type");
+    }
+}
+
 //Ek .java file me sirf ONE public top-level class / interface ho sakti hai
 //aur
 //uska naam file ke naam ke equal hona chahiye
