@@ -1,0 +1,23 @@
+package creationalPatterns.AbstractFactory;
+
+public interface Invoice {
+    void generateInvoice();
+}
+
+//India factory
+class GSTInvoice implements Invoice{
+
+    @Override
+    public void generateInvoice() {
+        System.out.println(" GST Invoice is being generated");
+    }
+}
+
+//Us factory
+class USInvoice implements Invoice{
+
+    @Override
+    public void generateInvoice() {
+        System.out.println("US Invoice is being generated");
+    }
+}
