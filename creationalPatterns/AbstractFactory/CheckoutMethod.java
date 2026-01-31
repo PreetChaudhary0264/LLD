@@ -1,8 +1,6 @@
 package creationalPatterns.AbstractFactory;
 
 public class CheckoutMethod {
-    private String gatewayType;
-    private String invoice;
 
     public static PaymentGateway handleCheckout(String gatewayType){
         if(gatewayType.equals("razorpay")){
