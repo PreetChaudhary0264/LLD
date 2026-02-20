@@ -4,6 +4,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 public class LikesCounter {
     AtomicInteger likes = new AtomicInteger(0);
+//    int c = 0;
     int prev;
     int next;
 
