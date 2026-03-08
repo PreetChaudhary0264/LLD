@@ -4,7 +4,7 @@ public class Slot {
     private Vehicle vehicle;
     private int slotId;
     private VehicleType vehicleType;
-    private boolean isOccupied;
+    private boolean isOccupied = false;
 
     public Slot(int slotId, VehicleType vehicleType){
         this.slotId = slotId;

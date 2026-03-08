@@ -16,7 +16,7 @@ public class ParkingLot {
 
     public Slot findAvailableSlot(){
         for(Slot slot : totalSlots){
-            if(slot.occupied())return slot;
+            if(!slot.occupied())return slot;
         }
         return null;
     }

@@ -21,4 +21,10 @@ public class Ticket {
     public int getTicketId(){
         return ticketId;
     }
+    public void removeTicket(){
+        this.ticketId = 0;
+        this.slot = null;
+        this.entryTime = 0;
+        this.vehicle = null;
+    }
 }
